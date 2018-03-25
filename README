@@ -1,0 +1,33 @@
+Instructions:
+
+DATA:
+
+The data provided with the assignemnet in "pnp_divyansh.cp" has been parsed and put into "data.txt".
+The programs expects a certain sort of strucure with the input data.
+'''
+Intrinsics: fx fy cx cy
+NumPoints: n
+X_i Y_i Z_i u_i v_i
+X_i Y_i Z_i u_i v_i
+X_i Y_i Z_i u_i v_i
+X_i Y_i Z_i u_i v_i
+X_i Y_i Z_i u_i v_i
+...
+.. (nth point).
+'''
+
+CODE:
+
+Code is enclosed in pose_estimation.cpp. "Eigen" library has been used for this assignment.
+It is locally installed and comes enclosed with the tarball. No modification should be needed to
+make the code to run.
+Please use the associate Cmake to compile the code.
+
+HOW TO RUN:
+
+Compile:
+g++ -I eigen-eigen-5a0156e40feb/ pose_estimation.cpp -o pose_estimation
+
+Sample run:
+./pose_estimation data.txt
+
